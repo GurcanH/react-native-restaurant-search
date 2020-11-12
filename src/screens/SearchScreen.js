@@ -18,7 +18,11 @@ const SearchScreen = () => {
 
   return (
     //* Fixing Android Issue --  Flex: 1 constraint the view to parent view
-    <View style={{ flex: 1 }}>
+    //  style={{ flex: 1 }}
+
+    //* Second Solution --  Using an empty placeholder <> instead of View
+
+    <>
       <SearchBar
         term={term}
         onTermChange={setTerm}
@@ -37,7 +41,7 @@ const SearchScreen = () => {
           title='Big Spender'
         />
       </ScrollView>
-    </View>
+    </>
   );
 };
 
