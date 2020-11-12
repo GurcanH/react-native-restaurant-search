@@ -17,7 +17,8 @@ const SearchScreen = () => {
   };
 
   return (
-    <View>
+    //* Fixing Android Issue --  Flex: 1 constraint the view to parent view
+    <View style={{ flex: 1 }}>
       <SearchBar
         term={term}
         onTermChange={setTerm}
